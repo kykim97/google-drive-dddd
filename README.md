@@ -39,15 +39,12 @@ mvn spring-boot:run
 ```
 - drive
 ```
- http :8088/files id="id" name="name" size="size" uploadedTime="uploadedTime" type="type" userId="userId" 
 ```
 - indexer
 ```
- http :8088/indices id="id" fileId="fileId" keyword="keyword" 
 ```
 - video processing
 ```
- http :8088/videos id="id" fileId="fileId" url="url" 
 ```
 - notification
 ```

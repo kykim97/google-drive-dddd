@@ -1,7 +1,6 @@
 package ggd.domain;
 
 import ggd.DriveApplication;
-import ggd.domain.FileUploaded;
 import java.time.LocalDate;
 import java.util.Date;
 import java.util.List;
@@ -27,12 +26,6 @@ public class File {
     private String type;
 
     private String userId;
-
-    @PostPersist
-    public void onPostPersist() {
-        FileUploaded fileUploaded = new FileUploaded(this);
-        fileUploaded.publishAfterCommit();
-    }
 
     public static FileRepository repository() {
         FileRepository fileRepository = DriveApplication.applicationContext.getBean(

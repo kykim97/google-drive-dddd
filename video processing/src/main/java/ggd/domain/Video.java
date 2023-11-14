@@ -1,7 +1,6 @@
 package ggd.domain;
 
 import ggd.VideoProcessingApplication;
-import ggd.domain.VideoProcessed;
 import java.time.LocalDate;
 import java.util.Date;
 import java.util.List;
@@ -21,12 +20,6 @@ public class Video {
     private Long fileId;
 
     private String url;
-
-    @PostPersist
-    public void onPostPersist() {
-        VideoProcessed videoProcessed = new VideoProcessed(this);
-        videoProcessed.publishAfterCommit();
-    }
 
     public static VideoRepository repository() {
         VideoRepository videoRepository = VideoProcessingApplication.applicationContext.getBean(

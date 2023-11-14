@@ -16,15 +16,15 @@ spring:
         - id: drive
           uri: http://localhost:8083
           predicates:
-            - Path=/files/**, 
+            - Path=, 
         - id: indexer
           uri: http://localhost:8084
           predicates:
-            - Path=/indices/**, 
+            - Path=, 
         - id: video processing
           uri: http://localhost:8085
           predicates:
-            - Path=/videos/**, 
+            - Path=, 
         - id: notification
           uri: http://localhost:8086
           predicates:
@@ -60,15 +60,15 @@ spring:
         - id: drive
           uri: http://drive:8080
           predicates:
-            - Path=/files/**, 
+            - Path=, 
         - id: indexer
           uri: http://indexer:8080
           predicates:
-            - Path=/indices/**, 
+            - Path=, 
         - id: video processing
           uri: http://videoProcessing:8080
           predicates:
-            - Path=/videos/**, 
+            - Path=, 
         - id: notification
           uri: http://notification:8080
           predicates:

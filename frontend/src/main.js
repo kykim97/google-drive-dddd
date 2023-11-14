@@ -46,11 +46,8 @@ Vue.use(Managing);
 const pluralCaseList = []
 
 
-pluralCaseList.push( {plural: "drives/files", pascal: "DriveFile"} )
 
-pluralCaseList.push( {plural: "indexers/indices", pascal: "IndexerIndex"} )
 
-pluralCaseList.push( {plural: "videoProcessings/videos", pascal: "VideoProcessingVideo"} )
 
 
 

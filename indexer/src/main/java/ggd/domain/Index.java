@@ -1,7 +1,6 @@
 package ggd.domain;
 
 import ggd.IndexerApplication;
-import ggd.domain.FileIndexed;
 import java.time.LocalDate;
 import java.util.Date;
 import java.util.List;
@@ -22,12 +21,6 @@ public class Index {
 
     @ElementCollection
     private List<String> keyword;
-
-    @PostPersist
-    public void onPostPersist() {
-        FileIndexed fileIndexed = new FileIndexed(this);
-        fileIndexed.publishAfterCommit();
-    }
 
     public static IndexRepository repository() {
         IndexRepository indexRepository = IndexerApplication.applicationContext.getBean(

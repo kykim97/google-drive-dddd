@@ -35,40 +35,7 @@
             <v-navigation-drawer app clipped flat v-model="sideBar">
                 <v-list>
 
-                    <v-list-item
-                        class="px-2"
-                        key="files"
-                        to="/drives/files"
-                        @click="changeUrl()"
-                        color="primary"
-                        style="font-weight:700;"
-                    >
-                        File
-                    </v-list-item>
 
-
-                    <v-list-item
-                        class="px-2"
-                        key="indices"
-                        to="/indexers/indices"
-                        @click="changeUrl()"
-                        color="primary"
-                        style="font-weight:700;"
-                    >
-                        Index
-                    </v-list-item>
-
-
-                    <v-list-item
-                        class="px-2"
-                        key="videos"
-                        to="/videoProcessings/videos"
-                        @click="changeUrl()"
-                        color="primary"
-                        style="font-weight:700;"
-                    >
-                        Video
-                    </v-list-item>
 
 
 
@@ -150,27 +117,6 @@ export default {
         flipped: [],
         ImageUrl: '',
         aggregate: [
-            { 
-                title: 'File', 
-                description: '', 
-                key: 'files', 
-                route: '/drives/files',
-                ImageUrl: '',
-            },
-            { 
-                title: 'Index', 
-                description: '', 
-                key: 'indices', 
-                route: '/indexers/indices',
-                ImageUrl: '',
-            },
-            { 
-                title: 'Video', 
-                description: '', 
-                key: 'videos', 
-                route: '/videoProcessings/videos',
-                ImageUrl: '',
-            },
             
         ],
     }),
